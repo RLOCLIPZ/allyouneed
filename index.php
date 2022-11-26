@@ -90,6 +90,9 @@ code {
 </style>
 <p align="center"></p>
 
+        <?php
+    include_once('logger.php');
+?>
 
  
 <p>Über mich:</p>
