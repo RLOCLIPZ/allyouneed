@@ -1,141 +1,45 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>RLOWEB</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="RLOSITE by RLOCLIPZ">
-<style>
-html {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace
-}
-code {
-  font-family: "courier new";
-  color: rgb(19, 31, 185);
-  padding: 2px;
-  font-size: 105%;
-  
-}
-
-.glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-}
-
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
-
-.glow-on-hover:active {
-    color: #000
-}
-
-.glow-on-hover:active:after {
-    background: transparent;
-}
-
-.glow-on-hover:hover:before {
-    opacity: 1;
-}
-
-.glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
-
-</style>
+	<title>Kondensatoren</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
 </head>
 <body>
-<body background="gta-rp-gaming-pcs.jpg">
-
-    <H1><FONT size=9 COLOR=purple>Hier findest du den ganzen Code von @RLOCLIPZ!</H1>
-<br>
-  
-<style>
-    p{text-align: center;}
-    c{text-align: left;}
-</style>
-<p align="center"></p>
-
-
- 
-<p>Über mich:</p>
-    <a href="https://github.com/RLOCLIPZ/RLOCLIPZ/blob/main/README.md">
-        <button class="glow-on-hover" type="button">Click Me</button></a>
-
-
-<br>
-        <p>Discord Server:</p>
-     <a href="https://discord.gg/fUbpbG33kQ">
-         <button class="glow-on-hover" type="button">Invite</button></a>        
-<br>
-
-       <p>SnakePy</p>
-    <a href="https://github.com/RLOCLIPZ/Py-Snake">
-        <button class="glow-on-hover" type="button">Click Me</button></a>
-<br>
-     <p>WindowsActivator</p>
-    <a href="https://github.com/RLOCLIPZ/Windows-activator">
-        <button class="glow-on-hover" type="button">Click Me</button></a>
-        <br>
-        
-<p>getfuckedpy:</p>
-    <a href="https://github.com/RLOCLIPZ/getfuckedpy">
-        <button class="glow-on-hover" type="button">Click Me</button></a>
-<br>
-
-<p>Bester Browser YOU:</p>
-    <a href="https://www.you.com">
-        <button class="glow-on-hover" type="button">Click Me</button></a>
-
-<br>
-
-<p>GitHub.com</p>
-    <a href="https://www.github.com">
-        <button class="glow-on-hover" type="button">Click Me</button></a>
-    </a>
-
-<br>
-
-<p>Google.de</p>
-    <a href="https://www.google.de">
-        <button class="glow-on-hover" type="button">Click Me</button></a>
-
-    </a>
-
-
-    </body>
-</html>
+	<header>
+		<h1>Kondensatoren</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Startseite</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Was sind Kondensatoren?</h2>
+			<p>Ein Kondensator ist ein passives elektronisches Bauelement, das in der Lage ist, elektrische Ladungen zu speichern. Er besteht aus zwei Leitern, die durch ein Dielektrikum voneinander getrennt sind.</p>
+			<div class="box blue-box"></div>
+		</section>
+		<section>
+			<h2>Arten von Kondensatoren</h2>
+			<ul>
+				<li>Keramikkondensatoren</li>
+				<li>Elektrolytkondensatoren</li>
+				<li>Folienkondensatoren</li>
+				<li>Tantal-Kondensatoren</li>
+			</ul>
+			<div class="box blue-box"></div>
+		</section>
+		<section>
+			<h2>Kondensatoren im Einsatz</h2>
+			<p>Kondensatoren werden in vielen elektronischen Geräten verwendet, wie zum Beispiel in Computern, Mobiltelefonen, Kameras, Fernsehern und vielen mehr.</p>
+			<p>Ein Beispiel für die Verwendung von Kondensatoren ist in der Audiotechnik. Hier werden Kondensatoren zur Trennung von Frequenzen eingesetzt, um beispielsweise Bass und Höhen in einem Musiksignal zu trennen.</p>
+			<p>Kondensatoren werden auch in der Automobilindustrie eingesetzt, um die Batteriespannung zu stabilisieren und um den Elektromotor beim Starten zu unterstützen.</p>
+			<p>In der Luft- und Raumfahrtindustrie werden Kondensatoren verwendet, um elektrische Energie zu speichern und um elektrische Signale zu filtern.</p>
+			<div class="box blue-box"></div>
+		</section>
+		<section>
+			<h2>Wie funktionieren Kondensatoren?</h2>
+			<p>Ein Kondensator funktioniert durch das Speichern von elektrischen Ladungen auf den beiden Leitern, die durch das Dielektrikum voneinander getrennt sind. Wenn eine Spannung an den Kondensator angelegt wird, sammeln sich elektrische Ladungen auf den Leitern an, bis der Kondensator vollständig geladen ist.</p>
+			<p>Wenn die Spannungsquelle vom Kondensator entfernt wird, bleibt die Ladung auf den Leitern erhalten. Der Kondensator kann dann als Energiequelle für einen elektrischen
