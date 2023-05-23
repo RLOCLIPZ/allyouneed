@@ -1,50 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SPzRemix.com</title>
+    <title>SPzRemixes.com</title>
     <style>
-        /* CSS für die Animationen */
-        .button {
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 15px 32px;
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
             text-align: center;
-            text-decoration: none;
-            display: inline-block;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .content {
             font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            transition-duration: 0.4s;
         }
         
-        .button:hover {
-            background-color: #008CBA;
-            color: white;
-        }
-        
-        .fade-in {
-            animation: fadein 2s;
-        }
-        
-        @keyframes fadein {
-            from { opacity: 0; }
-            to   { opacity: 1; }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .title {
+                font-size: 20px;
+            }
+            
+            .content {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Willkommen auf SPzRemixes.com!</h1>
+    <header class="header">
+        <h1>SPzRemixes.com</h1>
+    </header>
     
-    <button class="button fade-in">Button 1</button>
-    <button class="button fade-in">Button 2</button>
-    <button class="button fade-in">Button 3</button>
-    
-    <script>
-        // JavaScript-Code für die Weiterleitung bei Klick auf die Buttons
-        document.querySelector('.button').addEventListener('click', function() {
-            window.location.href = 'http://www.example.com';
-        });
-    </script>
+    <div class="container">
+        <section class="section">
+            <h2 class="title">Über uns</h2>
+            <p class="content">
+                SPzRemixes.com ist ein führendes Unternehmen in der Remix-Industrie. Wir bieten hochwertige Remixes und DJ-Services für verschiedene Musikgenres an. Unsere talentierten DJs und Musikproduzenten sorgen dafür, dass Ihre Veranstaltung oder Ihr Projekt unvergesslich wird.
+            </p>
+        </section>
+        
+        <section class="section">
+            <h2 class="title">Unsere Leistungen</h2>
+            <p class="content">
+                - Professionelle Remixes für Clubs, Partys und Events<br>
+                - Individuelle DJ-Sets und Mixe<br>
+                - Remix-Produktionen für Künstler und Labels<br>
+                - Musikberatung und Unterstützung bei der Musikauswahl<br>
+                - DJ-Schulungen und Workshops
+            </p>
+        </section>
+        
+        <section class="section">
+            <h2 class="title">Kontakt</h2>
+            <p class="content">
+                Telefon: +123456789<br>
+                E-Mail: info@spzremixes.com<br>
+                Adresse: 123 Beispielstraße, 12345 Musterstadt
+            </p>
+        </section>
+    </div>
 </body>
 </html>
