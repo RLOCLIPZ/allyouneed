@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>AllYouNeed by rloclipz</title>
+    <meta name="description" content="All system programs you will ever need for diagnostics, etc...">
+    <style>
+        html {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        body {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        
+        .stars {
+            background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            z-index: 0;
+        }
+        
+        .twinkling {
+            width: 10000px;
+            height: 100%;
+            background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+            background-size: 1000px 1000px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 2;
+            animation: move-background 70s linear infinite;
+        }
+        
+        .clouds {
+            width: 10000px;
+            height: 100%;
+            background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+            background-size: 1000px 1000px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 3;
+            animation: move-background 150s linear infinite;
+        }
+        
+        .moon {
+            background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon.png") no-repeat;
+            background-size: 200px 200px;
+            position: absolute;
+            top: 50px;
+            right: 100px;
+            width: 200px;
+            height: 200px;
+            z-index: 4;
+        }
+        
+        @keyframes move-background {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(1000px);
+            }
+        }
+        
+        .glow-on-hover {
+            width: 220px;
+            height: 50px;
+            border: none;
+            outline: none;
+            color: #fff;
+            background: #111;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            border-radius: 10px;
+        }
+        
+        .glow-on-hover:before {
+            content: '';
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+        }
+        
+        .glow-on-hover:active {
+            color: #333;
+        }
+        
+        .glow-on-hover:active:after {
+            background: transparent;
+        }
+        
+        .glow-on-hover:hover:before {
+            opacity: 1;
+        }
+        
+        .glow-on-hover:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #111;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+        
+        @keyframes glowing {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 400% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+        
+        h1, p {
+            color: purple;
+            font-size: 24px;
+        }
+        
+        footer {
+            text-align: center;
+            position: fixed;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1><font size="9" color="purple">Here you will find a list of all programs you will ever need!</font></h1>
+    <br>
+    <style>
+        p {
+            text-align: center;
+        }
+        
+        c {
+            text-align: left;
+        }
+    </style>
+    <p align="center"></p>
+    <p>Community Discord Server:</p>
+    <a href="https://discord.gg/R3zKq8HPdS" target="_blank">
+        <button class="glow-on-hover">Invite</button>
+    </a>
+    <br>
+    <p>Google Chrome:</p>
+    <a href="https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B9E934F4A-F84F-1DB9-6551-7DCD3973AD51%7D%26lang%3Dde%26browser%3D5%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe" target="_blank">
+        <button class="glow-on-hover">Download</button>
+    </a>
+    <br>
+    <p>Libre Office:</p>
+    <a href="https://mirror.faigner.de/tdf/libreoffice/stable/7.5.4/win/x86_64/LibreOffice_7.5.4_Win_x86-64.msi" target="_blank">
+        <button class="glow-on-hover">Download</button>
+    </a>
+    <br>
+    <p>VLC Media Player:</p>
+    <a href="https://ftp2.nluug.nl/mediaplayer/vlc/vlc/3.0.18/win64/vlc-3.0.18-win64.exe" target="_blank">
+        <button class="glow-on-hover">Download</button>
+    </a>
+    <br>
+    <p>7-ZIP:</p>
+    <a href="https://www.7-zip.org/a/7z2201-x64.exe" target="_blank">
+        <button class="glow-on-hover">Download</button>
+    </a>
+    <br>
+    <p>HwInfo x64:</p>
+    <a href="https://download.fosshub.com/Protected/expiretime=1687001641;badurl=aHR0cHM6Ly93d3cuZm9zc2h1Yi5jb20vSFdpTkZPLmh0bWw=/b224ad79c7f42fc8cf98992d9e497c9965927e05d50c5fbfb49f0d70ed8968ec/5b969867e5c78775cb187a52/645b9703a47d49012f526bf4/hwi_746.exe" target="_blank">
+        <button class="glow-on-hover">Download</button>
+    </a>
+    <div class="background-container">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+    </div>
+
+    <script>
+        // JavaScript code can be added here if needed
+    </script>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</p>
+        <p>all downloads are from the original publishers websites!</p>
+        <p>&copy; @rloclipz 2023</p>
+    </footer>
+</body>
+</html>
