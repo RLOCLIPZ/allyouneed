@@ -2,24 +2,32 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>AllYouNeed by rloclipz</title>
-    <meta name="description" content="All system programs you will ever need for diagnostics, etc...">
+    <title>AllYouNeed by somesaescha</title>
+    <meta name="description" content="Get AllYouNeed Today!">
     <style>
         html {
             text-align: center;
             font-family: Courier, monospace;
         }
-        
+
         body {
-            position: relative;
-            overflow: hidden;
+            position: unset;
+            overflow: scroll;
         }
-        
+
         .chars {
     font-family: 'Arial';
     font-weight: normal;
     font-style: normal;
 }
+      .downchars {
+    font-family: "Arial";
+      font-weight: normal;
+      font-size: small;
+      font-style: normal;
+      color: purple;
+        
+      }
 
         .background-container {
             position: fixed;
@@ -29,7 +37,7 @@
             right: 0;
             z-index: -1;
         }
-        
+
         .stars {
             background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
             position: absolute;
@@ -40,7 +48,7 @@
             display: block;
             z-index: 0;
         }
-        
+
         .twinkling {
             width: 10000px;
             height: 100%;
@@ -53,7 +61,7 @@
             z-index: 2;
             animation: move-background 70s linear infinite;
         }
-        
+
         .clouds {
             width: 10000px;
             height: 100%;
@@ -66,7 +74,7 @@
             z-index: 3;
             animation: move-background 150s linear infinite;
         }
-        
+
         .moon {
             background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon.png") no-repeat;
             background-size: 200px 200px;
@@ -77,7 +85,7 @@
             height: 200px;
             z-index: 4;
         }
-        
+
         @keyframes move-background {
             from {
                 transform: translateX(0);
@@ -86,7 +94,7 @@
                 transform: translateX(1000px);
             }
         }
-        
+
         .glow-on-hover {
             width: 220px;
             height: 50px;
@@ -99,7 +107,7 @@
             z-index: 1;
             border-radius: 10px;
         }
-        
+
         .glow-on-hover:before {
             content: '';
             background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -116,19 +124,19 @@
             transition: opacity .3s ease-in-out;
             border-radius: 10px;
         }
-        
+
         .glow-on-hover:active {
             color: #333;
         }
-        
+
         .glow-on-hover:active:after {
             background: transparent;
         }
-        
+
         .glow-on-hover:hover:before {
             opacity: 1;
         }
-        
+
         .glow-on-hover:after {
             z-index: -1;
             content: '';
@@ -140,7 +148,7 @@
             top: 0;
             border-radius: 10px;
         }
-        
+
         @keyframes glowing {
             0% {
                 background-position: 0 0;
@@ -152,13 +160,13 @@
                 background-position: 0 0;
             }
         }
-        
+
         h1, p {
             color: #14bdd3;
             font-size: 24px;
-            
+
         }
-        
+
         footer {
             text-align: center;
             position: fixed;
@@ -169,13 +177,13 @@
     </style>
 </head>
 <body>
-    <h1><font size="9" color="purple">Here you will find a list of all programs you will ever need!</font></h1>
+    <h1><font size="9" color="purple">Easy Access to what you use most!</font></h1>
     <br>
     <style>
         p {
             text-align: center;
         }
-        
+
         c {
             text-align: left;
         }
@@ -211,6 +219,7 @@
         <button class="glow-on-hover">Download</button>
     </a>
     <br>
+  <p class="downchars">all downloads are from the original publishers websites</p>
     <br>
     <div class="background-container">
         <div class="stars"></div>
@@ -223,8 +232,6 @@
     </script>
     <br>
     <footer>
-        <p class="chars" >all downloads are from the original publishers websites!</p>
-        <p>&copy; @rloclipz 2023</p>
     </footer>
 </body>
 </html>
